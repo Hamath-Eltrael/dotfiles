@@ -1,0 +1,50 @@
+shell unzip --help | less
+shell unzip Daniel.zip Daniel
+shell unzip Daniel.zip ./Daniel
+shell mkdir 2019.05.31/-2019.06.02/-Segeln
+shell mkdir 2019.05.31\-2019.06.02\-Segeln
+shell unzip 
+shell mv World\ of\ Hamath /home/marvin/Bilder
+shell mv %s /home/marvin/Bilder/World\ of\ Hamath
+shell rm -r temp 
+shell mv fafceb7df86e4c54c785de6b6ae99329d91e1166_full.jpg /home/marvin/Bilder/World\ of\ Hamath
+shell mv fafceb7df86e4c54c785de6b6ae99329d91e1166_full.jpg Neues-Logo.jpg
+shell mkdir CC
+shell mv %s ./CC
+shell mkdir ogat
+shell mv %s ./
+shell mv %s /mnt/ssd/ExternalLibrary/ogat 
+delete
+shell mv Newsletter\ CC3.0\ Launch\(1\).pdf Newsletter\ CC3.0\ Launch.pdf 
+shell remove %s 
+shell sudo rmq
+search IMG_6135
+shell rm IMG_6135.jpg 
+shell 
+search IMG_61553
+shell rm
+shell rm -r Jsidee 
+shell rm %s 
+shell rm -r .TeamSpeak\ 3 
+shell rm -r %s
+open_with 2to3q
+shell rm thomas.jpg.xmp 
+shell rm %s
+shell rm -r
+shell rm -r Schreibtisch 
+search i
+search i3
+
+shell rm -r %s 
+shell cp edited /mn
+shell rm -r edited 
+open_with ranger
+open_with nemo
+search Down
+shell rm Pali-kanon.zip 
+shell mkdir kontakte_löschen_ab_1.1.2020
+shell mv %s /home/marvin/Downloads/kontakte_löschen_ab_1.1.2020
+shell mv 'kontakte_löschen_ab_1.1.2020' 'kontakte_backup_löschen_ab_1.1.2020' 
+open_with 
+shell cp config config-cp
+search .X
