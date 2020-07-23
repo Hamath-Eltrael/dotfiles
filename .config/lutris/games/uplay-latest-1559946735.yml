@@ -1,0 +1,14 @@
+game:
+  arch: win64
+  exe: drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/Uplay.exe
+  prefix: /home/marvin/Programme/Uplay
+system:
+  env:
+    DXVK_CONFIG_FILE: /home/marvin/Programme/Uplay/dxvk.conf
+    DXVK_HUD: compiler
+wine:
+  dxvk: true
+  esync: true
+  overrides:
+    nvapi,nvapi64: disabled
+  version: ge-faudio-protonified-4.8-x86_64

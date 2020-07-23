@@ -1,50 +1,50 @@
-shell unzip --help | less
-shell unzip Daniel.zip Daniel
-shell unzip Daniel.zip ./Daniel
-shell mkdir 2019.05.31/-2019.06.02/-Segeln
-shell mkdir 2019.05.31\-2019.06.02\-Segeln
-shell unzip 
-shell mv World\ of\ Hamath /home/marvin/Bilder
-shell mv %s /home/marvin/Bilder/World\ of\ Hamath
-shell rm -r temp 
-shell mv fafceb7df86e4c54c785de6b6ae99329d91e1166_full.jpg /home/marvin/Bilder/World\ of\ Hamath
-shell mv fafceb7df86e4c54c785de6b6ae99329d91e1166_full.jpg Neues-Logo.jpg
-shell mkdir CC
-shell mv %s ./CC
-shell mkdir ogat
-shell mv %s ./
-shell mv %s /mnt/ssd/ExternalLibrary/ogat 
-delete
-shell mv Newsletter\ CC3.0\ Launch\(1\).pdf Newsletter\ CC3.0\ Launch.pdf 
-shell remove %s 
-shell sudo rmq
-search IMG_6135
-shell rm IMG_6135.jpg 
-shell 
-search IMG_61553
-shell rm
-shell rm -r Jsidee 
-shell rm %s 
-shell rm -r .TeamSpeak\ 3 
-shell rm -r %s
-open_with 2to3q
-shell rm thomas.jpg.xmp 
-shell rm %s
-shell rm -r
-shell rm -r Schreibtisch 
-search i
-search i3
-
-shell rm -r %s 
-shell cp edited /mn
-shell rm -r edited 
-open_with ranger
-open_with nemo
-search Down
-shell rm Pali-kanon.zip 
-shell mkdir kontakte_löschen_ab_1.1.2020
-shell mv %s /home/marvin/Downloads/kontakte_löschen_ab_1.1.2020
-shell mv 'kontakte_löschen_ab_1.1.2020' 'kontakte_backup_löschen_ab_1.1.2020' 
+search .xini
+search Downl
+shell cp %s /home/marvin/.minecraft/resourcepacks
+search .min
+search .minec
+shell zip Faitfull-1.15.zip %s 
+shell cp Faitfull-1.15.zip ..
+shell rm Faitfull-1.15.zip 
+shell zip -r Faithfull-1.15.zip assets .gitignore pack.mcmeta pack.png
+shell cp Faithfull-1.15.zip ..
+shell rm -r Faithful-1.15 
+search .i3
+shell rm rm
+shell mkdri laura
 open_with 
-shell cp config config-cp
-search .X
+shell mkdir minecraft
+search *.launcher
+shell mv TaleWorlds.MountAndBlade.Launcher.exe TaleWorlds.MountAndBlade.Launcher.exe.backup
+shell mv TaleWorlds.MountAndBlade.Launcher.exe.backup 
+shell rm
+shell cp TaleWorlds.MountAndBlade.Launcher.exe TaleWorlds.MountAndBlade.Launcher.exe.backup
+shell cp Bannerlord.exe TaleWorlds.MountAndBlade.Launcher.exe
+shell cp 100CANON /mnt/ssd/Fotographie
+shell rm -r *
+shell rm -r s
+shell rm -r
+open_with google-chrome
+open_with google-chrome-stable
+shell 
+shell rm -r %s
+open_with firefox
+shell rm LFS-BOOK-9.1-systemd\(1\).pdf 
+shell rm 2020.jpg 
+shell rm %s
+shell mkdir Sterne
+shell mv %s Sterne
+shell mkdir Christian-Geburtstag
+shell mv %s Christian-Geburtstag
+shell mkdir Pferde
+shell rm IMG_0693.CR2 
+shell mkdir Altenheim
+shell mv %s Altenheim
+shell mv %s Pferde
+shell sudo rm -r %s 
+shell rm -r 2020.05.15-2020.05.22-Urlaub-Mama
+shell rm -r Altenheim 
+shell rm Sterne 
+shell rm -r Sterne 
+shell rm %s 
+search net

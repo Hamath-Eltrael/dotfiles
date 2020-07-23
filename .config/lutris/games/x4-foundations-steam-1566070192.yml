@@ -1,0 +1,7 @@
+game:
+  appid: '392160'
+steam:
+  runner_executable: /bin/steam-runtime
+  steam_native_runtime: true
+system:
+  vk_icd: /usr/share/vulkan/icd.d/nvidia_icd.json

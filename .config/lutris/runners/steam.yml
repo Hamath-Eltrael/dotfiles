@@ -1,0 +1,8 @@
+steam:
+  lsi_steam: false
+  quit_steam_on_exit: false
+  runner_executable: /bin/steam-runtime
+  steam_native_runtime: false
+system:
+  reset_desktop: true
+  restore_gamma: true

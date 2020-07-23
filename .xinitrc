@@ -54,7 +54,9 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
-#legt monitoreinstellungen fest mit arandr soll generieren
-xrandr --output DVI-D-0 --off --output HDMI-1 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-3 --off --output DP-2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-0 --off
+#legt monitoreinstellungen original fest mit arandr soll generieren
+xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-3 --off --output DP-2 --primary --mode 2560x1440 --pos 3840x0 --rotate normal --output DP-1 --off --output DP-0 --off
+
+
 #startet i3 döö
 exec i3
