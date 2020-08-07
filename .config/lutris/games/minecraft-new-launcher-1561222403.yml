@@ -1,5 +1,0 @@
-game:
-  exe: /mnt/ssd/ExternalLibrary/Minecraft/minecraft-launcher
-  working_dir: /mnt/ssd/ExternalLibrary/Minecraft
-system:
-  disable_runtime: true
