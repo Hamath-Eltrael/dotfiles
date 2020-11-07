@@ -230,39 +230,40 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # autostart
-exec compton
+exec picom
 exec pavucontrol
-exec pulseeffects
+exec "setxkbmap -layout de"
+#exec pulseeffects
 #exec urxvt
 #exec sleep 20; exec firefox
 #exec sleep 7; exec firefox
 #exec LD_PRELOAD="/usr/lib/libgio-2.0.so.0 /usr/lib/libglib-2.0.so.0" steam-native
-exec steam-native
-exec thunderbird
-exec lutris
+exec sleep 10; exec steam-native
+#exec thunderbird
+#exec lutris
 exec sleep 10; exec discord
 #exec sleep 10; exec teamspeak3
-exec sleep 10; exec mumble
+#exec sleep 10; exec mumble
 #exec spotify
 
 # hintergrund festlegen
-exec_always feh --bg-scale /home/marvin/Bilder/Wallpaper/5609.jpg
+exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/cutie.jpg
 
 # auflösung und monitore über ~/.xinitrc festgelegt
 
 # Automatisches verschieben bestimmter programme
 assign [class="Pavucontrol"] $ws10
-assign [class="pulseeffects"] $ws10
-assign [class="Pulseeffects"] $ws10
-assign [class="discord"] $ws2
+#assign [class="pulseeffects"] $ws10
+#assign [class="Pulseeffects"] $ws10
+assign [class="discord"] $ws9
 #assign [class="firefox"] $ws2
-assign [class="Steam"] $ws4
-assign [class="Lutris"] $ws4
-assign [class="TeamSpeak 3"] $ws2
+assign [class="Steam"] $ws8
+#assign [class="Lutris"] $ws4
+#assign [class="TeamSpeak 3"] $ws2
 assign [class="Spotify"] $ws10
-#assign [class="google-chrome"] $ws2
-assign [class="Thunderbird"] $ws1
-assign [class="mumble"] $ws2
+assign [class="google-chrome"] $ws2
+#assign [class="Thunderbird"] $ws1
+#assign [class="Mumble -- 1.3.3"] $ws9
 
 #game fixes
 for_window [instance="origin.exe"] floating enable
