@@ -39,8 +39,8 @@ bindsym Mod4+Return exec urxvt
 
 #start vim like browser qutebrowswer
 #bindsym Mod4+w exec qutebrowser
-#starte google chrome
-bindsym Mod4+w exec google-chrome-stable
+#starte firefox
+bindsym Mod4+w exec firefox
 # kill focused window
 bindsym Mod4+Shift+q kill
 # start dmenu (a program launcher)
@@ -232,7 +232,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # autostart
-exec picom
+#exec picom
 # priviously compton
 exec pavucontrol
 exec "setxkbmap -layout de"
