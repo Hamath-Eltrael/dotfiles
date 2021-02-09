@@ -1,4 +1,3 @@
-search .xini
 search Downl
 shell cp %s /home/marvin/.minecraft/resourcepacks
 search .min
@@ -48,3 +47,4 @@ shell rm Sterne
 shell rm -r Sterne 
 shell rm %s 
 search net
+shell cp .screenlayout /homq

@@ -55,7 +55,7 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 #legt monitoreinstellungen original fest mit arandr soll generieren
-xrandr --output DVI-D-0 --off --output HDMI-0 --off --output HDMI-1 --off --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off
+xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x1440 --rotate normal --dpi 175 --output DP-1-1.3 --mode 2560x1440 --pos 475x0 --rotate normal --output DP-1-0 --off --output DP-1-1 --off --output HDMI-1-0 --off
 
 #startet i3 döö
 exec i3

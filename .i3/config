@@ -232,23 +232,20 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # autostart
-#exec picom
+exec picom
 # priviously compton
-exec pavucontrol
-exec "setxkbmap -layout de"
+#exec pavucontrol
+#exec "setxkbmap -layout de"
 #exec urxvt
 #exec LD_PRELOAD="/usr/lib/libgio-2.0.so.0 /usr/lib/libglib-2.0.so.0" steam-native
 #^is legacy
-exec sleep 10; exec steam-native
-exec sleep 10; exec discord
+#exec sleep 10; exec steam-native
+#exec sleep 10; exec discord
 
 # hintergrund festlegen
-#exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/cutie.jpg
-# currently not in use, instead image from lightdm is used
-# config with lightdm-gtk-greeter-settings
+exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/stellaris-utopia.jpg
 
 # auflösung und monitore über ~/.xinitrc festgelegt
-# currenty not in use!
 
 # Automatisches verschieben bestimmter programme
 assign [class="Pavucontrol"] $ws10
