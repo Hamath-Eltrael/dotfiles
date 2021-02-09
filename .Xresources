@@ -1,3 +1,11 @@
+!High dpi adjustments
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.rgba: rgb
+!Xft.hintstyle: hintfull
+Xft.dpi: 150
+
+
 !set font
 URxvt.font: xft:monospace:size=10
 
