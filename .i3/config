@@ -234,7 +234,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # autostart
 exec picom
 # priviously compton
-#exec pavucontrol
+exec pavucontrol
+exec pulseeffects
 #exec "setxkbmap -layout de"
 #exec urxvt
 #exec LD_PRELOAD="/usr/lib/libgio-2.0.so.0 /usr/lib/libglib-2.0.so.0" steam-native
@@ -252,7 +253,7 @@ assign [class="Pavucontrol"] $ws10
 assign [class="Pulseeffects"] $ws10
 assign [class="discord"] $ws9
 assign [class="Steam"] $ws8
-assign [class="Spotify"] $ws10
+assign [class="Lutris"] $ws8
 #assign [class="Mumble -- 1.3.3"] $ws9
 
 #game fixes
