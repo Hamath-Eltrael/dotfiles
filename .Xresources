@@ -7,7 +7,8 @@ Xft.dpi: 150
 
 
 !set font
-URxvt.font: xft:monospace:size=10
+URxvt.font: xft:monospace:size=12
+URxvt.letterSpace: -1
 
 !deactivate scrollbar
 URxvt.scrollBar: false
