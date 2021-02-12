@@ -249,6 +249,7 @@ exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/stellaris-utopia.jpg
 
 # Automatisches verschieben bestimmter programme
 assign [class="Pavucontrol"] $ws10
+assign [class="Pulseeffects"] $ws10
 assign [class="discord"] $ws9
 assign [class="Steam"] $ws8
 assign [class="Spotify"] $ws10
