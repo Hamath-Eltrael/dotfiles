@@ -237,7 +237,7 @@ exec picom
 exec pavucontrol
 exec pulseeffects
 #exec "setxkbmap -layout de"
-#exec urxvt
+exec urxvt
 #exec LD_PRELOAD="/usr/lib/libgio-2.0.so.0 /usr/lib/libglib-2.0.so.0" steam-native
 #^is legacy
 #exec sleep 10; exec steam-native
