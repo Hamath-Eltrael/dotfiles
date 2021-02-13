@@ -54,6 +54,10 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
+#enviroment variable
+#for qt5 to use breeze
+export QT_STYLE_OVERRIDE=breeze
+
 #legt monitoreinstellungen original fest mit arandr soll generieren
 xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x1440 --rotate normal --dpi 175 --output DP-1-1.3 --mode 2560x1440 --pos 475x0 --rotate normal --output DP-1-0 --off --output DP-1-1 --off --output HDMI-1-0 --off
 
