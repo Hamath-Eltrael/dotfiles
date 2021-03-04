@@ -193,6 +193,9 @@ client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		$urgent-bg-color
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+# systemtray on primary monitor
+	tray_output primary
+
         status_command i3blocks -c /home/hamath/.i3/i3blocks.conf
 # farben der Bar festlegen mit den oben einstellten variabeln
 	colors {
@@ -222,14 +225,13 @@ for_window [class=".*"] border pixel 3
 no_focus [class=".*"]
 
 # Pulse Audio controls with keyboard
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5% #lauter
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -5% #leiser
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle #stumm
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ #lauter
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- #leiser
+bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle #stumm
 
-# Mediplayersteuerung mit tastatur
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+# helligkeitsstruerung mit den tasten
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # autostart
 exec picom
@@ -241,7 +243,7 @@ exec urxvt
 #exec sleep 10; exec discord
 
 # hintergrund festlegen
-exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/stellaris-utopia.jpg
+exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/blue-girl.jpg
 
 # auflösung und monitore über ~/.xinitrc festgelegt
 
