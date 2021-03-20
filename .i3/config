@@ -234,7 +234,7 @@ bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # autostart
-exec picom
+exec picom --experimental-backends
 # priviously compton
 exec pavucontrol
 exec pulseeffects
