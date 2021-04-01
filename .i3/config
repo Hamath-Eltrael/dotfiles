@@ -243,7 +243,7 @@ exec urxvt
 #exec sleep 10; exec discord
 
 # hintergrund festlegen
-exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/blue-girl.jpg
+exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/waking-in-space.jpg
 
 # auflösung und monitore über ~/.xinitrc festgelegt
 
