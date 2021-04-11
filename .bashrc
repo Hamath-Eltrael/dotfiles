@@ -12,6 +12,7 @@ PS1='\[\e[1;34m\]\u\[\e[m\]@\[\e[1;34m\]\h\[\e[m\]:\W \$ '
 alias ll='ls -al'
 alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
 alias clear='clear && neofetch'
+alias ssh='ssh -Y'
 
 # Modefied commands
 
