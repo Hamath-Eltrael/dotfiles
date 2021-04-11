@@ -1,2 +1,2 @@
-backup-server-hdd='rsync -aAX --info=progress2 hamath@192.168.1.101:/mnt/hdd /mnt/HDD/server-hdd'
+'rsync -aAX --info=progress2 hamath@192.168.1.101:/mnt/hdd /mnt/HDD/server-hdd'
 # add '--delete' to remove deleted files
