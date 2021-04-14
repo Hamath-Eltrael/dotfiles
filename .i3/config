@@ -242,6 +242,9 @@ exec urxvt
 #exec sleep 10; exec steam-native
 #exec sleep 10; exec discord
 
+#set the screenbirhtness to 50% on login
+exec light -S 50
+
 # hintergrund festlegen
 exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/waking-in-space.jpg
 
