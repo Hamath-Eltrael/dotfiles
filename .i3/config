@@ -246,7 +246,7 @@ exec urxvt
 exec light -S 50
 
 # hintergrund festlegen
-exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/waking-in-space.jpg
+exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/stellaris-utopia.jpg
 
 # auflösung und monitore über ~/.xinitrc festgelegt
 
