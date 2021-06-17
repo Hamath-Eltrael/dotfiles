@@ -246,7 +246,7 @@ exec urxvt
 exec light -S 50
 
 # hintergrund festlegen
-exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/40k-mechanicus-fleetmaster.jpg
+exec_always feh --bg-scale /home/hamath/Bilder/Files-system-hierarchy.jpg
 
 # auflösung und monitore über ~/.xinitrc festgelegt
 
