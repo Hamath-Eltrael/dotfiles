@@ -51,3 +51,7 @@ if has('syntax') && has('eval')
 endif
 set number
 set relativenumber
+syntax on
+set background=dark
+filetype plugin indent on
+set showmatch
