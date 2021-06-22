@@ -8,3 +8,6 @@ xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --dpi
 
 # set the headphones as soundoutput
 pactl set-default-sink alsa_output.usb-ASUSTeK_Strix_7.1-00.analog-surround-71
+
+# stop picom
+killall picom

@@ -8,3 +8,6 @@ xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x1440 --rotate normal --
 
 # set the dock-speakers as soundoutput
 pactl set-default-sink alsa_output.usb-Lenovo_ThinkPad_USB-C_Dock_Gen2_USB_Audio_000000000000-00.analog-stereo
+
+# restart picom
+picom &
