@@ -41,7 +41,7 @@ urxvt.terName: rxvt-unicode
 urxvt.cutchars: "()*,<>[]{}|'
 
 !set transpaerzie transparent=0000 opaque=ffff
-urxvt.background: rgba:0000/0000/0000/cc00
+urxvt.background: rgba:0000/0000/0000/ffff
 
 !?
 urxvt.mapAlert: true
