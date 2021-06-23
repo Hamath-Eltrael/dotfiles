@@ -181,7 +181,7 @@ set $bg-color			#4874ad
 set $inactive-bg-color		#244672
 set $text-color			#ffffff
 set $inactive-text-color	#cccccc
-set $urgent-bg-color		#e83333
+set $urgent-bg-color		#bd2c40
 
 # Fenster
 #			Rand			Hintergrund		Text			Indicator
@@ -190,23 +190,26 @@ client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$ina
 client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$inactive-bg-color
 client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		$urgent-bg-color
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-# systemtray on primary monitor
-	tray_output primary
+## Start i3bar to display a workspace bar (plus the system information i3status
+## finds out, if available)
+##bar {
+## systemtray on primary monitor
+#	tray_output primary
+#
+#        status_command i3blocks -c /home/hamath/.i3/i3blocks.conf
+## farben der Bar festlegen mit den oben einstellten variabeln
+#	colors {
+#		background #102647 
+#		separator #757575
+##					grenze			hintergrund		text
+#		focused_workspace	$bg-color		$bg-color		$text-color
+#		inactive_workspace	$inactive-bg-color	$inactive-bg-color	$inactive-text-color
+#		urgent_workspace	$urgent-bg-color	$urgent-bg-color	text-color
+#	}
+#}
 
-        status_command i3blocks -c /home/hamath/.i3/i3blocks.conf
-# farben der Bar festlegen mit den oben einstellten variabeln
-	colors {
-		background #102647 
-		separator #757575
-#					grenze			hintergrund		text
-		focused_workspace	$bg-color		$bg-color		$text-color
-		inactive_workspace	$inactive-bg-color	$inactive-bg-color	$inactive-text-color
-		urgent_workspace	$urgent-bg-color	$urgent-bg-color	text-color
-	}
-}
+exec_always --no-startup-id /home/hamath/.config/polybar/launch.sh
+
 # USER ADDED
 
 # Set color

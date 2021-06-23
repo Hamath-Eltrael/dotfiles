@@ -1,0 +1,492 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+bg-color = #4874ad
+inactive-bg-color = #244672
+text-color = #ffffff
+inactive-text-color = #cccccc
+urgent-bg-color = #bd2c40
+underline = #ffb52a
+
+[bar/second]
+monitor = DP-1-1.3
+monitor-strict = true
+monitor-exact = true
+bottom = true
+fixed-center = true
+width = 100%
+height = 38
+background = ${colors.bg-color}
+foreground = ${colors.text-color}
+radius = 12
+border-size = 8
+border-color = #00000000
+padding-left = 2
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=20;1
+modules-left =
+modules-center = i3
+modules-right = date
+dim-value = 1.0
+locale = de_DE.UTF-8
+dpi-x = 175
+dpi-y = 175
+
+
+[bar/hamathbar]
+; Use either of the following command to list available outputs:
+; If unspecified, the application will pick the first one it finds.
+; $ polybar -m | cut -d ':' -f 1
+; $ xrandr -q | grep " connected" | cut -d ' ' -f1
+; If no monitor is given, the primary monitor is used if it exists
+monitor = eDP-1
+
+; Use the specified monitor as a fallback if the main one is not found.
+monitor-fallback =
+
+; Require the monitor to be in connected state
+; XRandR sometimes reports my monitor as being disconnected (when in use)
+monitor-strict = false
+
+; Use fuzzy matching for monitors (only ignores dashes -)
+; Useful when monitors are named differently with different drivers.
+monitor-exact = true
+
+; Tell the Window Manager not to configure the window.
+; Use this to detach the bar if your WM is locking its size/position.
+; Note: With this most WMs will no longer reserve space for 
+; the bar and it will overlap other windows. You need to configure
+; your WM to add a gap where the bar will be placed.
+override-redirect = false
+
+; Put the bar at the bottom of the screen
+bottom = true
+
+; Prefer fixed center position for the `modules-center` block. 
+; The center block will stay in the middle of the bar whenever
+; possible. It can still be pushed around if other blocks need
+; more space.
+; When false, the center block is centered in the space between 
+; the left and right block.
+fixed-center = true
+
+; Dimension defined as pixel value (e.g. 35) or percentage (e.g. 50%),
+; the percentage can optionally be extended with a pixel offset like so:
+; 50%:-10, this will result in a width or height of 50% minus 10 pixels
+width = 100%
+height = 38
+
+; Offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
+; the percentage can optionally be extended with a pixel offset like so:
+; 50%:-10, this will result in an offset in the x or y direction 
+; of 50% minus 10 pixels
+offset-x = 0
+offset-y = 0
+
+; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
+background = ${colors.bg-color}
+
+; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
+foreground = ${colors.text-color}
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+; background-0 = 
+
+; Value used for drawing rounded corners
+; Note: This shouldn't be used together with border-size because the border 
+; doesn't get rounded. For this to work you may also need to enable 
+; pseudo-transparency or use a compositor like compton.
+; Individual values can be defined using:
+;   radius-{top,bottom}
+; or
+;   radius-{top,bottom}-{left,right} (unreleased)
+; Polybar always uses the most specific radius definition for each corner.
+radius-top = 24
+radius-bottom = 0
+
+; Under-/overline pixel size and argb color
+; Individual values can be defined using:
+;   {overline,underline}-size
+;   {overline,underline}-color
+line-size = 6
+line-color = #f00
+
+; Values applied to all borders
+; Individual side values can be defined using:
+;   border-{left,top,right,bottom}-size
+;   border-{left,top,right,bottom}-color
+; The top and bottom borders are added to the bar height, so the effective
+; window height is:
+;   height + border-top-size + border-bottom-size
+; Meanwhile the effective window width is defined entirely by the width key and
+; the border is placed within this area. So you effectively only have the
+; following horizontal space on the bar:
+;   width - border-right-size - border-left-size
+; border-size can be defined as pixel value (e.g. 35) or percentage (e.g. 50%),
+; the percentage can optionally be extended with a pixel offset like so:
+; 50%:-10, this will result in 50% minus 10 pixels. The percentage is relative
+; to the monitor width or height depending on the border direction. 
+border-top-size = 1
+border-bottom-size = 0
+border-color = #00000000
+
+; Number of spaces to add at the beginning/end of the bar
+; Individual side values can be defined using:
+;   padding-{left,right}
+padding-left = 2
+padding-right = 2
+
+; Number of spaces to add before/after each module
+; Individual side values can be defined using:
+;   module-margin-{left,right}
+module-margin-left = 1
+module-margin-right = 2
+
+; Fonts are defined using <font-name>;<vertical-offset>
+; Font names are specified using a fontconfig pattern.
+;   font-0 = NotoSans-Regular:size=8;2
+;   font-1 = MaterialIcons:size=10
+;   font-2 = Termsynu:size=8;-1
+;   font-3 = FontAwesome:size=10
+; See the Fonts wiki page for more details
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=20;1
+
+; Modules are added to one of the available blocks
+;   modules-left = cpu ram
+;   modules-center = xwindow xbacklight
+;   modules-right = ipc clock
+modules-left = filesystem eth1 eth2 wlan
+modules-center = i3
+modules-right = cpu gpu-nvidia gpu-intel memory battery date
+
+; The separator will be inserted between the output of each module
+; This has the same properties as a label
+; separator =
+
+; Opacity value between 0.0 and 1.0 used on fade in/out
+dim-value = 1.0
+
+; Locale used to localize various module data (e.g. date)
+; Expects a valid libc locale, for example: sv_SE.UTF-8
+locale = de_DE.UTF-8
+
+; Position of the system tray window
+; If empty or undefined, tray support will be disabled
+; NOTE: A center aligned tray will cover center aligned modules
+;
+; Available positions:
+;   left
+;   center
+;   right
+;   none
+tray-position = right
+
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = false
+
+; Tray icon max size
+tray-maxsize = 32
+
+; Background color for the tray container 
+; ARGB color (e.g. #f00, #ff992a, #ddff1023)
+; By default the tray container will use the bar
+; background color.
+; tray-background = #00000000
+
+; Tray offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
+tray-offset-x = 0
+tray-offset-y = 0
+
+; Pad the sides of each tray icon
+tray-padding = 4
+
+; Scale factor for tray clients
+tray-scale = 1.0
+
+; Restack the bar window and put it above the
+; selected window manager's root
+;
+; Fixes the issue where the bar is being drawn
+; on top of fullscreen window's
+;
+; Currently supported WM's:
+;   bspwm
+;   i3 (requires: `override-redirect = true`)
+; wm-restack =
+
+; Set a DPI values used when rendering text
+; This only affects scalable fonts
+; Set this to 0 to let polybar calculate the dpi from the screen size.
+; dpi = 
+dpi-x = 175
+dpi-y = 175
+
+; Fallback click handlers that will be called if
+; there's no matching module handler found.
+click-left = 
+click-middle = 
+click-right =
+scroll-up =
+scroll-down =
+double-click-left =
+double-click-middle =
+double-click-right =
+
+; Requires polybar to be built with xcursor support (xcb-util-cursor)
+; Possible values are:
+; - default   : The default pointer as before, can also be an empty string (default)
+; - pointer   : Typically in the form of a hand
+; - ns-resize : Up and down arrows, can be used to indicate scrolling
+cursor-click = 
+cursor-scroll = 
+
+
+
+
+;
+;
+;MODULES
+;
+;
+
+
+[module/i3]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+wrapping-scroll = false
+
+; Available tags:
+;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+;   <label-mode> (default)
+format = <label-state> <label-mode>
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.underline}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-background = ${colors.inactive-bg-color}
+label-focused-underline = ${colors.underline}
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-background = ${colors.urgent-bg-color}
+label-urgent-padding = 2
+
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 96
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = AC
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 30
+
+;imported from another config
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = #deff28
+
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-underline = #ff6928
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.text-color}
+format-full-underline = #cccccc
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.text-color}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.text-color}
+animation-charging-framerate = 750
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.text-color}
+animation-discharging-framerate = 750
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.text-color}
+format-underline = #3793fc
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.text-color}
+format-underline = #9f78e1
+label = %percentage_used%% %gb_used%/%gb_total%
+
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = %d.%m.%y
+time = "%H:%M "
+format-prefix = 
+format-prefix-foreground = ${colors.text-color}
+;format-underline = #0a6cf5
+
+label = %date% %time%
+
+[module/filesystem]
+type = internal/fs
+interval = 60
+
+;mountpoints to display
+mount-0 = /
+mount-1 = /home
+
+label-mounted = %{F#ffffff}%mountpoint%%{F-}: %free%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.urgent-bg-color}
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #55aa55
+label-connected = %essid% mit %local_ip%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.urgent-bg-color}
+label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.text-color}
+
+[module/eth1]
+type = internal/network
+interface = enp44s0u1u1
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.text-color}
+label-connected = %local_ip%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.urgent-bg-color}
+label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/eth2]
+type = internal/network
+interface = enp44s0u2
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.text-color}
+label-connected = %local_ip%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.urgent-bg-color}
+label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+; 
+; experimental!!
+;
+
+[module/gpu-nvidia]
+type = custom/script
+exec = nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{ print "GPU-Nvidia",""$1"","%"}'
+format-underline = #2fbc33
+interval = 10
+
+[module/gpu-intel]
+type = custom/script
+exec = /home/hamath/.config/polybar/custom/system-gpu-intel.sh
+interval = 20
+format-underline = #3793fc
