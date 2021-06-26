@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 PS1='\[\e[1;34m\]\u\[\e[m\]@\[\e[1;34m\]\h\[\e[m\]:\W \$ '
 
 # New commands
-alias ll='ls -al'
+alias ll='ls -hal'
 alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
 alias clear='clear && neofetch'
 alias startup='sudo pacman -Syu && startx'
