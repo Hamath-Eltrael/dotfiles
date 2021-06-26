@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 # New commands
-alias ll='ls -al'
+alias ll='ls -hal'
 alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
 alias clear='clear && neofetch'
 
