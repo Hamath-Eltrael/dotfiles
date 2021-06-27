@@ -245,6 +245,9 @@ exec urxvt
 #exec sleep 10; exec steam-native
 #exec sleep 10; exec discord
 
+# syncronize the different copy-pase machanisms
+exec autocutsel
+
 #set the screenbirhtness to 50% on login
 exec light -S 50
 
