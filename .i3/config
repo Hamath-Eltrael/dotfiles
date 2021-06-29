@@ -227,6 +227,9 @@ for_window [class=".*"] border pixel 3
 #verhindert das automatische fokussurieren von neuen fenstern
 no_focus [class=".*"]
 
+#Fix for Origin launcher
+for_window [title="Origin"] floating enable
+
 # Pulse Audio controls with keyboard
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ #lauter
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- #leiser
