@@ -353,13 +353,13 @@ adapter = AC
 poll-interval = 30
 
 ;imported from another config
-format-charging = <animation-charging> <label-charging>
+format-charging = <label-charging>
 format-charging-underline = #deff28
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <label-discharging>
 format-discharging-underline = #ff6928
 
-format-full-prefix = " "
+;format-full-prefix = " "
 format-full-prefix-foreground = ${colors.text-color}
 format-full-underline = #cccccc
 
@@ -383,7 +383,7 @@ animation-discharging-framerate = 750
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+;format-prefix = " "
 format-prefix-foreground = ${colors.text-color}
 format-underline = #3793fc
 label = %percentage:2%%
@@ -391,7 +391,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+;format-prefix = " "
 format-prefix-foreground = ${colors.text-color}
 format-underline = #9f78e1
 label = %percentage_used%% %gb_used%/%gb_total%
@@ -403,7 +403,7 @@ interval = 5
 
 date = %d.%m.%y
 time = "%H:%M "
-format-prefix = 
+;format-prefix = 
 format-prefix-foreground = ${colors.text-color}
 ;format-underline = #0a6cf5
 
