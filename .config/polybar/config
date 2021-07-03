@@ -45,7 +45,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=20;1
 modules-left =
-modules-center = i3
+modules-center = i3-2
 modules-right = date
 dim-value = 1.0
 locale = de_DE.UTF-8
@@ -283,6 +283,62 @@ type = internal/i3
 ; on different bars
 ;
 ; Default: false
+pin-workspaces = false
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+wrapping-scroll = false
+
+; Available tags:
+;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+;   <label-mode> (default)
+format = <label-state> <label-mode>
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.underline}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-background = ${colors.inactive-bg-color}
+label-focused-underline = ${colors.underline}
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index%
+label-visible-background = ${self.label-focused-background}
+;label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-background = ${colors.urgent-bg-color}
+label-urgent-padding = 2
+
+[module/i3-2]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
 pin-workspaces = true
 
 ; Sort the workspaces by index instead of the default
@@ -322,13 +378,14 @@ label-unfocused-padding = 2
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
+;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
 label-urgent-background = ${colors.urgent-bg-color}
 label-urgent-padding = 2
+
 
 [module/battery]
 type = internal/battery
