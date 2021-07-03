@@ -80,7 +80,7 @@ monitor-exact = true
 override-redirect = false
 
 ; Put the bar at the bottom of the screen
-bottom = true
+bottom = false
 
 ; Prefer fixed center position for the `modules-center` block. 
 ; The center block will stay in the middle of the bar whenever
@@ -122,8 +122,8 @@ foreground = ${colors.text-color}
 ; or
 ;   radius-{top,bottom}-{left,right} (unreleased)
 ; Polybar always uses the most specific radius definition for each corner.
-radius-top = 24
-radius-bottom = 0
+radius-top = 0
+radius-bottom = 24
 
 ; Under-/overline pixel size and argb color
 ; Individual values can be defined using:
@@ -147,8 +147,8 @@ line-color = #f00
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in 50% minus 10 pixels. The percentage is relative
 ; to the monitor width or height depending on the border direction. 
-border-top-size = 1
-border-bottom-size = 0
+border-top-size = 0
+border-bottom-size = 1
 border-color = #00000000
 
 ; Number of spaces to add at the beginning/end of the bar
