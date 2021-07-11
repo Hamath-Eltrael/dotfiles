@@ -243,7 +243,7 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 exec_always killall picom; exec picom --experimental-backends
 # priviously compton
 exec pavucontrol
-exec pulseeffects
+exec easyeffects
 exec urxvt
 #exec sleep 10; exec steam-native
 #exec sleep 10; exec discord
@@ -261,7 +261,7 @@ exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/awesome.png
 
 # Automatisches verschieben bestimmter programme
 assign [class="Pavucontrol"] $ws10
-assign [class="Pulseeffects"] $ws10
+assign [instance="easyeffects"] $ws10
 assign [class="discord"] $ws9
 assign [class="Steam"] $ws8
 assign [class="Lutris"] $ws8
