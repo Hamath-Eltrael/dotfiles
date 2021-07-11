@@ -255,7 +255,7 @@ exec autocutsel
 exec light -S 50
 
 # hintergrund festlegen
-exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/awesome.png
+exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/blue-girl.*
 
 # auflösung und monitore über ~/.xinitrc festgelegt
 
