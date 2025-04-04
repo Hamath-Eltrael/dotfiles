@@ -21,4 +21,4 @@ alias ssh='ssh -Y'
 neofetch
 
 # source the functions-file
-source ~/.bashrc-function
+source ~/.bashrc-functions
