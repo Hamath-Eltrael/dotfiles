@@ -1,2 +1,2 @@
 # how to use dd to make a bootable usb from an iso
-dd bs=4M if=/path/to/iso of=/dev/sdX status=progress oflag=snyc
+dd bs=4M if=/path/to/iso of=/dev/sdX status=progress oflag=sync
