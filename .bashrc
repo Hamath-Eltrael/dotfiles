@@ -14,6 +14,7 @@ alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
 alias clear='clear && neofetch'
 alias startup='archnews && sudo pacman -Syu && startx'
 alias ssh='ssh -Y'
+alias reboot='sudo reboot now' 
 
 # Modefied commands
 
