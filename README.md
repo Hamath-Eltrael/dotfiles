@@ -23,7 +23,8 @@ my dotfiles
  - qt5
  - firefox
  - dmenu
- - pulseaudio
+ - pipewire
+ - pipewire-pulse
  - picom
  - pavucontrol
  - easyeffects
