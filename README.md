@@ -35,7 +35,7 @@ my dotfiles
 
 Make sure that the owner of the Home Directory is the owner of the files. If not, it's easiest to login as that user and executing: 
 ```
-Bildschirmfoto 2025-04-04 um 18.42.16
+sudo chown $(whoami) dateiname
 ```
 Afterwards you might want to reboot.
  
