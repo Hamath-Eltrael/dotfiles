@@ -240,7 +240,8 @@ bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # autostart
-exec_always killall picom; exec picom --experimental-backends
+exec_always killall picom; exec picom &
+
 # priviously compton
 exec pavucontrol
 exec easyeffects
@@ -260,10 +261,10 @@ exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/blue-girl.*
 # auflösung und monitore über ~/.xinitrc festgelegt
 
 # Automatisches verschieben bestimmter programme
-assign [class="Pavucontrol"] $ws10
+assign [class="pavucontrol"] $ws10
 assign [instance="easyeffects"] $ws10
 assign [class="discord"] $ws9
-assign [class="Steam"] $ws8
+assign [class="steam"] $ws8
 assign [class="Lutris"] $ws8
 #assign [class="Mumble -- 1.3.3"] $ws9
 
