@@ -32,8 +32,8 @@ my dotfiles
  - & posibly, probably more
 
 ## Before copying into the Home Directory:
-You will also want to make sure, that you do not or at least delete the folders `.git` and maybe even the `.gitignore` do not get copied to the home directory.
- 
+Additionally, it is imperative that you ensure that the folders `.git` and `.gitignore` are not copied to the home directory.
+
 ## Things to do, after putting files into the Home Direcotry:
 
 Make sure that the owner of the Home Directory is the owner of the files. If not, it's easiest to login as that user and executing: 
