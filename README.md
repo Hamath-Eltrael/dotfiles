@@ -25,6 +25,7 @@ my dotfiles
  - dmenu
  - pipewire
  - pipewire-pulse
+ - rtkit
  - picom
  - pavucontrol
  - easyeffects
