@@ -244,7 +244,7 @@ exec_always killall picom; exec picom &
 
 # priviously compton
 exec pavucontrol
-exec easyeffects
+#exec easyeffects
 exec urxvt
 #exec sleep 10; exec steam-native
 #exec sleep 10; exec discord
@@ -262,7 +262,7 @@ exec_always feh --bg-scale /home/hamath/Bilder/Wallpaper/blue-girl.*
 
 # Automatisches verschieben bestimmter programme
 assign [class="pavucontrol"] $ws10
-assign [instance="easyeffects"] $ws10
+#assign [instance="easyeffects"] $ws10
 assign [class="discord"] $ws9
 assign [class="steam"] $ws8
 assign [class="Lutris"] $ws8

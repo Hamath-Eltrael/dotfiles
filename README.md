@@ -28,21 +28,24 @@ my dotfiles
  - rtkit
  - picom
  - pavucontrol
- - easyeffects
  - feh
  - & posibly, probably more
+
 
 ## Before copying into the Home Directory:
 Additionally, it is imperative that you ensure that the folders `.git` and `.gitignore` are not copied to the home directory.
 
+
 ## Things to do, after putting files into the Home Direcotry:
 
-Make sure that the owner of the Home Directory is the owner of the files. If not, it's easiest to login as that user and executing: 
+Make sure that the owner of the Home Directory is the owner of the files. If not, it's easiest to **login as that user** and executing: 
 ```
 sudo chown -R $(whoami) dateiname
 ```
 Afterwards you might want to reboot.
+
  
 ## Programs that are Optional, in the sense that their stuff has been # in the Configs
 
  - qutebrowser
+ - easyeffects
