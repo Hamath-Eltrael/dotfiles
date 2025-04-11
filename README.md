@@ -32,6 +32,12 @@ my dotfiles
  - nautilus (it's nice to view files the classik way every now and then)
  - & posibly, probably more
 
+## For Devices with Wi-Fi
+ - networkmanager (enable this with `systemctl`)
+ - wpa_supplicant (enable this with `systemctl`)
+
+Maker sure thet dhcpcd is disabled in `systemctl`.
+
 
 ## Before copying into the Home Directory:
 Additionally, it is imperative that you ensure that the folders `.git` and `.gitignore` are not copied to the home directory.
