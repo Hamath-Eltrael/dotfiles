@@ -14,7 +14,7 @@ my dotfiles
  - rxvt-unicode
  - htop
  - neofetch
- - picom
+ - git
  - polybar
  - ranger
  - vim
