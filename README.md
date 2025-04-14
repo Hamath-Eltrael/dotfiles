@@ -29,6 +29,7 @@ my dotfiles
  - picom
  - pavucontrol
  - feh
+ - nvidia-utils
  - intel-gpu-tools
  - bc
  - nautilus (it's nice to view files the classik way every now and then)
