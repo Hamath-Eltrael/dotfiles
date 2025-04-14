@@ -29,6 +29,7 @@ my dotfiles
  - picom
  - pavucontrol
  - feh
+ - w3m
  - nvidia-utils
  - intel-gpu-tools
  - bc
