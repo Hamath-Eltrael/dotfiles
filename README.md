@@ -34,6 +34,8 @@ my dotfiles
  - intel-gpu-tools
  - bc
  - nautilus (it's nice to view files the classik way every now and then)
+ - numlockx
+ - systemd-numlockontty (AUR!)
  - & posibly, probably more
 
 ## For Devices with Wi-Fi
@@ -47,11 +49,16 @@ Maker sure thet dhcpcd is disabled in `systemctl`. Then you can connect to netwo
 Additionally, it is imperative that you ensure that the folders `.git` and `.gitignore` are not copied to the home directory.
 
 
-## Things to do, after putting files into the Home Direcotry:
+## Things to do, after putting files into the Home Direcotry & installing everything:
 
 Make sure that the owner of the Home Directory is the owner of the files. If not, it's easiest to **login as that user** and executing: 
 ```
 sudo chown -R $(whoami) dateiname
+```
+
+Activate numlock uppon reaching the tty(from systemd-numlockontty(AUR))
+```
+sudo systemctl enable numLockOnTty
 ```
 Afterwards you might want to reboot.
 
