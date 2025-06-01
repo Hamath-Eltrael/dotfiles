@@ -30,6 +30,7 @@ alias reboot='sudo reboot now'
 alias shutdown='shutdown now' 
 alias ssh='ssh -Y'
 alias clear='clear && neofetch'
+alias make='makepkg -sic'
 
 # Displays neofetch in new terminal
 neofetch
