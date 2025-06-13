@@ -36,6 +36,7 @@ my dotfiles
  - nautilus (it's nice to view files the classik way every now and then)
  - numlockx
  - systemd-numlockontty (AUR!)
+ - ligth (AUR!)
  - & posibly, probably more
 
 ## For Devices with Wi-Fi
