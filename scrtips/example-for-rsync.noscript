@@ -1,2 +1,6 @@
-'rsync -aAX --info=progress2 hamath@192.168.1.101:/mnt/hdd /mnt/HDD/server-hdd'
+# maybe do a dry-run first:
+'rsync -azvAX --dry-run hamath@192.168.1.101:/mnt/hdd/ /mnt/HDD/server-hdd/'
+# then actually do it:
+'rsync -azAX --info=progress2 hamath@192.168.1.101:/mnt/hdd/ /mnt/HDD/server-hdd/'
 # add '--delete' to remove deleted files
+# FYI: the first is the source, the secound is where it gets placed (Put slashes (/) at the end of both to copy the contents of the source into the target. Without them the whole of the source would get upt into the target.)
