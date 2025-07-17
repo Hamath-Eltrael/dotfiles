@@ -118,12 +118,12 @@ PS1='\[\e[1;34m\]\u\[\e[m\]@\[\e[1;34m\]\h\[\e[m\]:\W \$ '
 alias ll='ls -hal'
 alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
 alias startup='archnews && sudo pacman -Syu && startx'
-alias rm='rm -I'
 
 # Modefied commands
 alias reboot='sudo reboot now' 
 alias ssh='ssh -Y'
 alias clear='clear && neofetch'
+alias rm='rm -I'
 
 # source the functions-file
 source ~/.bashrc-functions
