@@ -1,3 +1,18 @@
+# funtion for startup command with automatic update-detection
+startup-function() {
+	echo "Checking for Updates..."
+	checkupdates > /dev/null
+	if [[ $? == 2 ]]; then
+		echo "No Updates to apply"
+	else
+		echo "Updates found. Checking for most recent news and providing pacman -Syu command."
+		archnews
+		sudo pacman -Syu
+	fi
+	startx
+
+}
+
 # function to get the latest arch-news
 function archnews {
 	# Arch latest news

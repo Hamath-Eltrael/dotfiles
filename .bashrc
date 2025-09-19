@@ -23,13 +23,16 @@ PS1='\[\e[1;34m\]\u\[\e[m\]@\[\e[1;34m\]\h\[\e[m\]:\W \$ '
 # New commands
 alias ll='ls -hal'
 alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
-alias startup='archnews && sudo pacman -Syu && startx'
+# alias startup='archnews && sudo pacman -Syu && startx'
+alias startup='startup-function'
+alias screensaver='sleep .5 && xset s activate'
 
 # Modefied commands
 alias reboot='sudo reboot now' 
 alias shutdown='shutdown now' 
 alias ssh='ssh -Y'
 alias clear='clear && neofetch'
+alias rm='rm -I'
 
 # Displays neofetch in new terminal
 neofetch
