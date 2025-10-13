@@ -1,0 +1,24 @@
+MenuBar=Disabled
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+
+[General]
+DynamicView=true
+ModifiedStartupSettings=false
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
+SortingChoice=CaseSensitiveSorting
+Version=202
+ViewPropsTimestamp=2025,10,11,13,8,38.423
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,windowsexethumbnail,avif,glycin-heif,imagethumbnail,evince,papers,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,heif,glycin-image-rs,jpegthumbnail,glycin-jxl,jxl,kraorathumbnail,windowsimagethumbnail,opendocumentthumbnail,directorythumbnail,librsvg,glycin-svg,svgthumbnail,gsf-office
