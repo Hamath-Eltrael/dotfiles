@@ -30,10 +30,9 @@ my dotfiles
  - pavucontrol
  - feh
  - w3m
- - nvidia-utils
- - intel-gpu-tools
+ - pacman-contrib
  - bc
- - nautilus (it's nice to view files the classik way every now and then)
+ - dolphin (it's nice to view files the classik way every now and then)
  - numlockx
  - systemd-numlockontty (AUR!)
  - ligth (AUR!)
