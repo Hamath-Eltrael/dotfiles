@@ -1,0 +1,12 @@
+# configuration that uses powerline only in Kitty, but not in other terminals or the TTY, because of font-configuration / patchin that would be necessarry for every terminal / the TTY.
+
+# check if running kitty
+if [[ "$TERM" == "xterm-kitty" ]]; then
+	# enable powerline
+	powerline-daemon -q
+	POWERLINE_BASH_CONTINUATION=1
+	POWERLINE_BASH_SELECT=1
+	. /usr/share/powerline/bindings/bash/powerline.sh
+
+# if not kitty, do nothing
+fi

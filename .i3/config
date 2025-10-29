@@ -35,7 +35,7 @@ set $right l
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+Return exec urxvt
+bindsym Mod4+Return exec kitty
 
 #start vim like browser qutebrowswer
 #bindsym Mod4+w exec qutebrowser
@@ -221,7 +221,7 @@ exec_always --no-startup-id /home/hamath/.config/polybar/launch.sh
 
 # Gaps & ähnliches
 gaps inner 30
-gaps outer 10
+#gaps outer 10
 #smart_gaps on
 smart_borders on
 
