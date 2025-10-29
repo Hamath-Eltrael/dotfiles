@@ -33,6 +33,15 @@ my dotfiles
  - pacman-contrib
  - bc
  - dolphin (it's nice to view files the classik way every now and then)
+ - awesome-terminal-fonts
+ - eza
+ - kitty
+ - neovim
+ - powerline
+ - powerline-fonts
+ - tree
+ - ttf-hack
+ - ttf-hack-nerd
  - numlockx
  - systemd-numlockontty (AUR!)
  - ligth (AUR!)
