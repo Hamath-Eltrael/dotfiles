@@ -36,7 +36,9 @@ PS1='\[\e[1;34m\]\u\[\e[m\]@\[\e[1;34m\]\h\[\e[m\]:\W \$ '
 
 # New commands
 alias ll='eza --icons=always  --color=auto --hyperlink --group-directories-first -lh'
-alias la='eza --icons=always  --color=auto --hyperlink --group-directories-first -lah'
+alias la='eza --icons=always  --color=auto --hyperlink --group-directories-first -lahg'
+alias lga='eza --icons=always  --color=auto --hyperlink --group-directories-first -lahg --git'
+alias lg='eza --icons=always  --color=auto --hyperlink --group-directories-first -lh --git'
 alias order66='sudo pacman -Qtdq | sudo pacman -Rns -'
 # alias startup='archnews && sudo pacman -Syu && startx'
 alias startup='startup-function'
